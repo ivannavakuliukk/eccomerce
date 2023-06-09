@@ -1,0 +1,11 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+	<div class="list-group">
+	  <a href="{% url 'catalog' %}" class="list-group-item list-group-item-action">Всі</a>
+	  <a href="{% url 'catalog_silver' %}" class="list-group-item list-group-item-action list-group-item-secondary">Срібло</a>
+	  <a href="{% url 'catalog_gold' %}" class="list-group-item list-group-item-action list-group-item-warning">Золото</a>
+	</div>
+    {% block products %}
+    {% endblock products %}
+{% endblock content %}
